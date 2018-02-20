@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+ul {
+    
+}
+
+
+li {
+    list-style-type: none;
+    display: inline;
+    border-right-color: #fff;
+}
+
+li a {
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;    
+    background: #df7f59;
+}
+
+body {
+    background: #e6612e;
+    padding: 3em;
+    font-family: 'Raleway', 'Arial';
+    color: #fff;
+}

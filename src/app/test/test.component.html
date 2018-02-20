@@ -1,0 +1,32 @@
+<div>
+  <table align="center">
+    <tr>
+      <td colspan="3" style="text-align:center;border-bottom: solid 2px black;">
+        <p *ngIf="userName || age">Good Day !!</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Enter Name:</td>
+      <td>
+        <input type="text" placeholder="Enter Name" [(ngModel)]="userName">
+      </td>
+      <td *ngIf="!userName"> 
+        <span>please enter username</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Enter Age:</td>
+      <td>
+        <input type="text" placeholder="Enter Age" [(ngModel)]="age">
+      </td>
+      <td *ngIf="!age">
+        <span>please enter age</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align:center">
+        <input type="submit" (click)=add() *ngIf="userName && age">
+      </td>
+    </tr>
+  </table>
+</div>

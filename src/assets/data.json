@@ -1,0 +1,27 @@
+{"product":[
+    {
+        "id": 1,
+        "productname": "xps-13",
+        "price": 89000
+    },
+    {
+        "id": 2,    
+        "productname": "dell headphone",
+        "price": 1500
+    },
+    {
+        "id": 3, 
+        "productname": "dell monitor",
+        "price": 9000
+    },
+    {
+        "id": 4, 
+        "productname": "dell cpu",
+        "price": 45000
+    },
+    {
+        "id": 5, 
+        "productname": "alienware",
+        "price": 175000
+    }
+]}
