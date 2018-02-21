@@ -71,7 +71,7 @@ var AppRoutingModule = /** @class */ (function () {
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<ul>\n  <li>\n    <a routerLink=\"form\">\n      Form\n    </a>\n  </li>\n  <li>\n    <a routerLink=\"userlist\">\n      User list\n    </a>\n  </li>\n  <li>\n    <a routerLink=\"json\">\n      Product\n    </a>\n  </li>\n</ul>\n<h1>This Is Home Page</h1>\n<h4>Use above Navigationbar to navigate through options</h4>\n<router-outlet></router-outlet>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<ul>\n  <li>\n    <a routerLink=\"form\">\n      Form\n    </a>\n  </li>\n  <li>\n    <a routerLink=\"userlist\">\n      User list\n    </a>\n  </li>\n  <li>\n    <a routerLink=\"json\">\n      Product\n    </a>\n  </li>\n</ul>\n<router-outlet></router-outlet>"
 
 /***/ }),
 
