@@ -40,7 +40,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var routes = [
     {
-        path: 'form',
+        path: '',
         component: __WEBPACK_IMPORTED_MODULE_2__test_test_component__["a" /* TestComponent */]
     },
     {
@@ -71,7 +71,7 @@ var AppRoutingModule = /** @class */ (function () {
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<ul>\n  <li>\n    <a routerLink=\"form\">\n      Form\n    </a>\n  </li>\n  <li>\n    <a routerLink=\"userlist\">\n      User list\n    </a>\n  </li>\n  <li>\n    <a routerLink=\"json\">\n      Product\n    </a>\n  </li>\n</ul>\n<router-outlet></router-outlet>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<ul>\n  <li>\n    <a routerLink=\"\">\n      Form\n    </a>\n  </li>\n  <li>\n    <a routerLink=\"userlist\">\n      User list\n    </a>\n  </li>\n  <li>\n    <a routerLink=\"json\">\n      Product\n    </a>\n  </li>\n</ul>\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -127,7 +127,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__test_test_component__ = __webpack_require__("./src/app/test/test.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__userlist_userlist_component__ = __webpack_require__("./src/app/userlist/userlist.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__jsontry_jsontry_component__ = __webpack_require__("./src/app/jsontry/jsontry.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -159,7 +159,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_3__app_routing_module__["a" /* AppRoutingModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_9__angular_http__["b" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_9__angular_common_http__["b" /* HttpClientModule */],
             ],
             providers: [__WEBPACK_IMPORTED_MODULE_4__data_service__["a" /* DataService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
@@ -229,7 +229,7 @@ module.exports = "tr, td {\n  text-align: center;\n  padding: 15px;\n  border: 1
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JsontryComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -245,7 +245,7 @@ var JsontryComponent = /** @class */ (function () {
     function JsontryComponent(http) {
         var _this = this;
         this.http = http;
-        this.http.get('assets/data.json').subscribe(function (res) { return _this.data = res.json(); });
+        this.http.get('assets/data.json').subscribe(function (res) { return _this.data = res; });
     }
     JsontryComponent.prototype.ngOnInit = function () {
     };
@@ -255,7 +255,7 @@ var JsontryComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/jsontry/jsontry.component.html"),
             styles: [__webpack_require__("./src/app/jsontry/jsontry.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]])
     ], JsontryComponent);
     return JsontryComponent;
 }());
