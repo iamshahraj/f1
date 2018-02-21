@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Http} from '@angular/http';
+import {HttpClient} from '@angular/common/http';
+
 
 @Component({
   selector: 'app-jsontry',
@@ -8,8 +9,9 @@ import {Http} from '@angular/http';
 })
 export class JsontryComponent implements OnInit {
   data: any;
-  constructor(private http:Http) {
-    this.http.get('assets/data.json').subscribe(res => this.data = res.json());
+  
+  constructor(private http:HttpClient) {
+    this.http.get('assets/data.json').subscribe(res => this.data = res);
    }
 
   ngOnInit() {

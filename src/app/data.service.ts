@@ -4,10 +4,12 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 @Injectable()
 export class DataService {
 
+
   private lists = new BehaviorSubject<any>([])
   list = this.lists.asObservable();
 
-  constructor() {}
+  constructor() {
+  }
 
   changeList(list) {
     this.lists.next(list);

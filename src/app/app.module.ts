@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { UserlistComponent } from './userlist/userlist.component';
 import { JsontryComponent } from './jsontry/jsontry.component';
-import { HttpModule }      from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { HttpModule }      from '@angular/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -6,7 +6,7 @@ import { JsontryComponent } from './jsontry/jsontry.component';
 
 const routes: Routes = [
   {
-    path: 'form',
+    path: '',
     component: TestComponent
   },
   {
